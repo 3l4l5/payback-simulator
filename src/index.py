@@ -19,7 +19,7 @@ def hello_world():
     return "Hello, World!"
 
 @app.route('/payback', methods=['POST'])
-def calk_payback():
+def return_payback():
     posted_json = request.get_json()
     is_correct_response = tools.check_json_type(posted_json)
     if is_correct_response:
